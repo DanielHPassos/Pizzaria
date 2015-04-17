@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5C4E8D40-5190-4A59-B628-7981E37AB3E9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pizzaria_Management_VIEW</RootNamespace>
+    <AssemblyName>Pizzaria_Management_VIEW</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CadPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadPedido.Designer.cs">
+      <DependentUpon>CadPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GerenciamentoCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GerenciamentoCadastro.Designer.cs">
+      <DependentUpon>GerenciamentoCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadCliente.Designer.cs">
+      <DependentUpon>CadCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GerenciamentoEstoque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GerenciamentoEstoque.Designer.cs">
+      <DependentUpon>GerenciamentoEstoque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GerenciamentoPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GerenciamentoPedido.Designer.cs">
+      <DependentUpon>GerenciamentoPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadFuncionario.Designer.cs">
+      <DependentUpon>CadFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadProduto.Designer.cs">
+      <DependentUpon>CadProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CadPedido.resx">
+      <DependentUpon>CadPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GerenciamentoCadastro.resx">
+      <DependentUpon>GerenciamentoCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadCliente.resx">
+      <DependentUpon>CadCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GerenciamentoEstoque.resx">
+      <DependentUpon>GerenciamentoEstoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GerenciamentoPedido.resx">
+      <DependentUpon>GerenciamentoPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadFuncionario.resx">
+      <DependentUpon>CadFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadProduto.resx">
+      <DependentUpon>CadProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\Pizzaria_Management_DAL.csproj">
+      <Project>{52a7db2f-18e6-4a50-b577-c3731c8de4cf}</Project>
+      <Name>Pizzaria_Management_DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Imagens\login.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imagens\lupa.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imagens\Pizza1.png" />
+    <Content Include="Imagens\Pizza2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
