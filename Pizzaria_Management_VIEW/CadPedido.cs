@@ -25,8 +25,8 @@ namespace Pizzaria_Management_VIEW
 
         private void button3_Click(object sender, EventArgs e)
         {
-            //comboBox3.Enabled = false;
-            //button2.Enabled = false;
+            comboBox3.Enabled = false;
+            button2.Enabled = false;
         }
     }
 }
