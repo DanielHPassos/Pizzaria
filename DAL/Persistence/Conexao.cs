@@ -15,7 +15,7 @@ namespace DAL.Model
 
         protected void AbrirConexao()
         {
-            con = new SqlConnection(Properties.Settings.Default.CS2);
+            con = new SqlConnection(Properties.Settings.Default.CS1);
             con.Open();
         }
         protected void FecharConexao()
