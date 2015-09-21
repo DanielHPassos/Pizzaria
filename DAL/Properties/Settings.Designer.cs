@@ -26,7 +26,7 @@ namespace DAL.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAB01M07\\SQLEXPRESS;Initial Catalog=Pizzaria_Management;Integrated Se" +
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAB01M09\\SQLEXPRESS;Initial Catalog=Pizzaria_Management;Integrated Se" +
             "curity=True")]
         public string CS1 {
             get {
